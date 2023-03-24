@@ -14,6 +14,13 @@
 
 # 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
+array = ["one", "two", "Three", "four", "five"]
+i = 0
+while i < array.length
+  p array[i]
+  i += 1
+end
+
 # 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
 
 # 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
