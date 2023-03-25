@@ -37,12 +37,40 @@
 
 # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
+# array = ["mary", "matt", "john"]
+# i = 0
+
+# while i < array.length
+#   p array[i]
+#   i += 1
+# end
+
 # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+# array = ["pig", "horse"]
+# array << "horse"
+# p array
 
 # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
+# array = [1, 2, 3, 4, 5]
+# array[0] *= 10
+# p array
+
 # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
+# array = [1, 2]
+# i = 0
+
+# while i < array.length
+# p array[i]
+# i += 1
+# end
+
 # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+
+# array = ["United_States_of_America", "China", "Russia"]
+# array << "Sweden"
+# p array
 
 # SOLUTIONS: https://gist.github.com/peterxjang/7095a2b19e1da2cc18d4a0dcd66cb8f1
