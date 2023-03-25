@@ -1,76 +1,22 @@
-# 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+# 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
 
-# array = ["one", "two", "Three"]
-# array << "four"
-# array << "five"
-# p array
+# 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
-# 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+# 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
-# array = ["a", "b", "c", "d"]
-# array[1] = 34
+# 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
-# p array
+# 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
-# 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+# 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
-# array = [1, 2, 3, 4, 5]
-# i = 0
-# while i < array.length
-#   p array[i]
-#   i += 1
-# end
+# 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
-# 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+# 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
-# array = [1]
-# array << 2
-# array << 3
-# array << 4
-# p array
+# 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
-# 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+# 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
 
-# array = ["ape", "buffalo", "cat"]
-# array[2] = array[2].upcase
-# p array
 
-# 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
-
-# array = ["mary", "matt", "john"]
-# i = 0
-
-# while i < array.length
-#   p array[i]
-#   i += 1
-# end
-
-# 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
-
-# array = ["pig", "horse"]
-# array << "horse"
-# p array
-
-# 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
-
-# array = [1, 2, 3, 4, 5]
-# array[0] *= 10
-# p array
-
-# 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
-
-# array = [1, 2]
-# i = 0
-
-# while i < array.length
-# p array[i]
-# i += 1
-# end
-
-# 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
-
-# array = ["United_States_of_America", "China", "Russia"]
-# array << "Sweden"
-# p array
-
-# SOLUTIONS: https://gist.github.com/peterxjang/7095a2b19e1da2cc18d4a0dcd66cb8f1
+# SOLUTIONS: https://gist.github.com/peterxjang/d257aec07882d78009bd796ed53f81bb
