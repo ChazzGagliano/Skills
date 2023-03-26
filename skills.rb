@@ -40,15 +40,25 @@
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
-states_and_capitals = {"New Jersey" => "Trenton", "Alabama" => "Birmingham", "Texas" => "Austin"}
+# states_and_capitals = {"New Jersey" => "Trenton", "Alabama" => "Birmingham", "Texas" => "Austin"}
 
-states_and_capitals["Florida"] = "Tallahassee"
+# states_and_capitals["Florida"] = "Tallahassee"
 
-p states_and_capitals
+# p states_and_capitals
 
 # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
+# laptop = {"brand" => "apple", "model" => "Macbook", "year" => 2017}
+# p laptop["brand"]
+# p laptop["model"]
+# p laptop["year"]
+
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+# laptops = [ {"brand" => "apple", "model" => "macbook"}, {"brand" => "lenovo", "model" => "Thinkpad"}, {"brand" => "lenovo", "model" => "slim"}
+# ]
+
+# p laptops[1]["model"]
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
