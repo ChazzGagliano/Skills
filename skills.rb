@@ -62,7 +62,19 @@
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
+# words_defintions = {"ice" => "Water at a frozen solid", "noun" => "person, place, or thing"}
+# words_defintions["ruler"] = "object used to measure length"
+
+# p words_defintions
+
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+# shirt = {"brand" => "nike", "color" => "blue", "size" => "XL"}
+# p shirt["brand"]
+# p shirt["color"]
+# p shirt["size"]
+
+
 
 
 # SOLUTIONS: https://gist.github.com/peterxjang/d257aec07882d78009bd796ed53f81bb
