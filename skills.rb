@@ -1,82 +1,41 @@
-# 1. Write a function that takes in a number and returns the number times two. Then run the function and print the result.
+#  1. Start with an array of numbers and create a new array with each number times 3.
+#     For example, [1, 2, 3] becomes [3, 6, 9].
 
-# def double_number(number)
-#   return number * 2
-# end
+numbers = [1, 2, 3]
 
-# p double_number(2)
+new_numbers = numbers.map |numbers|
+new_numbers = number * 3 
 
-# 2. Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
+p new_numbers
 
-# def upcase_string(string)
-#   return string.upcase
-# end
+#  2. Start with an array of strings and create a new array with each string upcased.
+#     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
 
-# p upcase_string("water")
+#  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
-# 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
+#  4. Start with an array of numbers and create a new array with each number plus 7.
+#     For example, [1, 2, 3] becomes [8, 9, 10].
 
-# def sub_numbers(number1, number2)
-#   return(number1 - number2)
-# end
+#  5. Start with an array of strings and create a new array with each string's length.
+#     For example, ["hello", "goodbye"] becomes [5, 7].
 
-# p sub_numbers(8, 4)
+#  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
 
-# 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
+#  7. Start with an array of numbers and create a new array with each number divided by 2.
+#     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
-# def number_times_itself(number)
-#   return(number * number)
-# end
+#  8. Start with an array of strings and create a new array with each string's first letter only.
+#     For example, ["hello", "goodbye"] becomes ["h", "g"].
 
-# p number_times_itself(4)
+# 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
-# 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
-
-# def letter_string(string)
-#   return string[0]
-# end
-
-# p letter_string("pig")
-
-# 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
-
-# def three_strings(string1, string2, string3)
-#   return "#{string1} #{string2} #{string3}"
-# end
-
-# p three_strings("pig", "dog", "cat")
-
-# 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
-
-# def number_string(number)
-#   return number.to_s
-# end
-
-# p number_string(4)
-
-# 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
-
-# def string_five(string)
-#   return string * 5 
-# end
-
-# p string_five("pig")
-
-# 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
-
-def average(number1, number2, number3)
-  return (number1 + number2 + number3) / 3
-end
-
-# p average(2, 3, 4)
-
-# 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
-
-def ten_thirty(number)
-  return (number * 10) + 30
-end
-
-p ten_thirty(4)
+# 10. Start with an array of numbers and create a new array with each number converted into a string.
+#     For example, [1, 2, 3] becomes ["1", "2", "3"].
 
 
-# SOLUTIONS: https://gist.github.com/peterxjang/6a26d3c698c651dd6e9ccb168d32648c
+# SOLUTIONS (using while loop): https://gist.github.com/peterxjang/b9ac4390aad2301a2238efc95c904f3d
+# SOLUTIONS (using .each shortcut): https://gist.github.com/peterxjang/66598fd7cdbc67fe663624e217cebbaf
+# SOLUTIONS (using .map shortcut): https://gist.github.com/peterxjang/23a8f8a51601e4288ba3a8aa6d1f1c98
