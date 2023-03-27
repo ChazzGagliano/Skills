@@ -59,14 +59,28 @@ age = hashes.map do |hash|
   hash[:age]
 end
 
-p age
+# p age
 
 
 #  7. Start with an array of numbers and create a new array with each number divided by 2.
 #     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
+quotient = [1, 2, 3]
+numbers = quotient.map do |quotent|
+  quotent / 2.to_f
+end
+
+p numbers
+
 #  8. Start with an array of strings and create a new array with each string's first letter only.
-#     For example, ["hello", "goodbye"] becomes ["h", "g"].
+    # For example, ["hello", "goodbye"] becomes ["h", "g"].
+
+strings = ["hello", "goodbye"]
+letters = strings.map do |string|
+  string[0]
+end
+
+p letters
 
 # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
