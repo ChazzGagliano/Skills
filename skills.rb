@@ -32,23 +32,35 @@
 
 # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
 
-def letter_string(string)
-  return string[0]
-end
+# def letter_string(string)
+#   return string[0]
+# end
 
 # p letter_string("pig")
 
 # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
 
-def three_strings(string1, string2, string3)
-  return "#{string1} #{string2} #{string3}"
-end
+# def three_strings(string1, string2, string3)
+#   return "#{string1} #{string2} #{string3}"
+# end
 
-p three_strings("pig", "dog", "cat")
+# p three_strings("pig", "dog", "cat")
 
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
+# def number_string(number)
+#   return number.to_s
+# end
+
+# p number_string(4)
+
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+
+def string_five(string)
+  return string * 5 
+end
+
+p string_five("pig")
 
 # 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
 
