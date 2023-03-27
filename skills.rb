@@ -3,13 +3,21 @@
 
 numbers = [1, 2, 3]
 
-new_numbers = numbers.map |numbers|
-new_numbers = number * 3 
+new_numbers = numbers.map do |number|
+ number * 3 
+end
 
 p new_numbers
 
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+
+array = ["hello", "goodbye"]
+new_array = array.map do |strings|
+  strings.upcase
+end
+
+p new_array
 
 #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
