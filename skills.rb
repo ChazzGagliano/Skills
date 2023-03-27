@@ -24,15 +24,27 @@
 
 # 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
 
-def number_times_itself(number)
-  return(number * number)
-end
+# def number_times_itself(number)
+#   return(number * number)
+# end
 
-p number_times_itself(4)
+# p number_times_itself(4)
 
 # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
 
+def letter_string(string)
+  return string[0]
+end
+
+# p letter_string("pig")
+
 # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
+
+def three_strings(string1, string2, string3)
+  return "#{string1} #{string2} #{string3}"
+end
+
+p three_strings("pig", "dog", "cat")
 
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
