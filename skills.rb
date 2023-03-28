@@ -1,22 +1,23 @@
-#  1. Start with an array of numbers and create a new array with each number times 3.
-#     For example, [1, 2, 3] becomes [3, 6, 9].
-
-# numbers = [1, 2, 3]
-
-# new_numbers = numbers.map do |number|
-#  number * 3 
-# end
-
-# p new_numbers
-
-#  2. Start with an array of strings and create a new array with each string upcased.
-#     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
 
 #  1. Start with an array of numbers and create a new array with only the numbers less than 20.
 #     For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
 
+numbers = [2, 32, 80, 18, 12, 3]
+new_numbers = numbers.select do |number|
+  number < 20
+end
+
+p new_numbers
+
 #  2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
 #     For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+
+strings = ["winner", "winner", "chicken", "dinner"] 
+new_strings = strings.select do |string|
+  string[0] == "w"
+end
+
+p new_strings
 
 #  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
