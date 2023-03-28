@@ -60,13 +60,30 @@ new_items = items.select do |item|
   item[:name].length < 6
 end
 
-p new_items
+# p new_items
 
 #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
 
+numbers = [8, 23, 0, 44, 1980, 3]
+new_numbers = numbers.select do |number|
+  number < 10
+end
+
+# p new_numbers
+
 #  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 #     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+
+strings = ["big", "little", "good", "bad"] 
+new_strings = strings.select do |string|
+  string[0] != "b"
+end
+
+p new_strings
+
+
+
 
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
