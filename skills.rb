@@ -7,7 +7,7 @@ new_numbers = numbers.select do |number|
   number < 20
 end
 
-p new_numbers
+# p new_numbers
 
 #  2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
 #     For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
@@ -17,13 +17,28 @@ new_strings = strings.select do |string|
   string[0] == "w"
 end
 
-p new_strings
+# p new_strings
 
 #  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
 
+items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+
+expensive_items = items.select do |item|
+item[:price] > 5
+end
+
+# p expensive_items
+
 #  4. Start with an array of numbers and create a new array with only the even numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+
+items = [2, 4, 5, 1, 8, 9, 7] 
+even_items = items.select do |item|
+  item % 2 == 0
+end
+
+p even_items
 
 #  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 #     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
