@@ -1,122 +1,32 @@
-#  1. Start with an array of numbers and compute the sum of all the numbers.
-#     For example, [5, 10, 8, 3] becomes 26.
-array = [5, 10, 8, 3]
-sum = 0
-array.each do |number|
-  sum += number
-end
+#  1. Convert an array of arrays into a hash.
+#     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
 
-# p sum
+#  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
+#     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
 
-#  2. Start with an array of strings and combine them all into a single string.
-#     For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
+#  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
+#     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
 
-array = ["volleyball", "basketball", "badminton"] 
-sentence = ""
-array.each do |word|
-  sentence += word
-end
+#  4. Convert a hash into an array of arrays.
+#     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
 
-# p sentence
+#  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
+#     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
 
-#  3. Start with an array of hashes and compute the sum of the prices (from the :price key).
-#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes 105.
+#  6. Convert an array of strings into a hash with keys for each string in the array and values for the number of times the string appears in the array.
+#     For example, ["do", "or", "do", "not"] becomes {"do" => 2, "or" => 1, "not" => 1}.
 
-array = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+#  7. Convert a hash into a flat array containing all the hash’s keys and values.
+#     For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes ["a", 1, "b", 2, "c", 3, "d", 4].
 
-sum = 0
+#  8. Combine data from a hash with names and prices and an array of hashes with names, colors, and weights to make a new hash.
+#     For example, {"chair" => 75, "book" => 15} and [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}] becomes {"chair" => {price: 75, color: "red", weight: 10}, "book" => {price: 15, color: "black", weight: 1}}.
 
-array.each do |number|
-  sum += number[:price]
-end
+#  9. Convert an array of hashes into a hash of arrays, using the author as keys and the titles as values.
+#     For example, [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
 
-# p sum
-
-#  4. Start with an array of numbers and compute the the minumum number.
-#     For example, [5, 10, 8, 3, 9] becomes 3.
-array = [5, 10, 8, 3, 9]
-min = array[0]
-array.each do |number|
-  if number < min
-  min = number
-  end
-end
-
-# p min
-
-#  5. Start with an array of strings and compute the total length of all the strings.
-#     For example, ["volleyball", "basketball", "badminton"] becomes 29.
-
-array = ["volleyball", "basketball", "badminton"] 
-sum = 0
-array.each do |number|
-  sum += number.length
-end
-
-# p sum
-
-#  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
-#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
-array = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
-min = array[0]
-array.each do |number|
-  if number[:price] < min[:price]
-    min = number
-  end
-end
-
-# p min
+# 10. Given a hash, create a new hash that has the keys and values switched.
+#     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
 
 
-#  7. Start with an array of numbers and compute product of all the numbers.
-#     For example, [5, 10, 8, 3] becomes 1200.
-
-array = [5, 10, 8, 3]
-product = 1 
-array.each do |number|
-  product *= number
-end
-
-# p product
-
-#  8. Start with an array of strings and combine them all into a single string, separated by dashes.
-#     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
-
-strings = ["volleyball", "basketball", "badminton"]
-single_string = "-"
-strings.each do |string|
-  single_string += "#{string}-"
-end
-# p single_string
-
-#  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
-#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
-
-array = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
-
-shortest_length = array[0]
-array.each do |short|
-  if shortest_length[:name].length > short[:name].length
-    shortest_length = short
-  end
-end
-
-p shortest_length
-
-# 10. Start with an array of numbers and compute the maximum number.
-#     For example, [5, 10, 8, 3] becomes 10.
-
-numbers = [5, 10, 8, 3]
-max_number = 0
-numbers.each do |number|
-  if number > max_number
-    max_number = number
-  end
-end
-
-p max_number
-
-
-# SOLUTIONS (using while loop): https://gist.github.com/peterxjang/376c8931a48549889eb3c9bc091e9f43
-# SOLUTIONS (using .each shortcut): https://gist.github.com/peterxjang/379c9945774f51027750c59d6e4395df
-# SOLUTIONS (using .reduce shortcut): https://gist.github.com/peterxjang/b69183e2d555964ce3936893f423ef35
+# SOLUTIONS: https://gist.github.com/peterxjang/216a7a6e8411ee5c05118e78022f2bc7
