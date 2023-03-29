@@ -30,7 +30,7 @@ array.each do |number|
   sum += number[:price]
 end
 
-p sum
+# p sum
 
 #  4. Start with an array of numbers and compute the the minumum number.
 #     For example, [5, 10, 8, 3, 9] becomes 3.
@@ -42,13 +42,31 @@ array.each do |number|
   end
 end
 
-p min
+# p min
 
 #  5. Start with an array of strings and compute the total length of all the strings.
 #     For example, ["volleyball", "basketball", "badminton"] becomes 29.
 
+array = ["volleyball", "basketball", "badminton"] 
+sum = 0
+array.each do |number|
+  sum += number.length
+end
+
+p sum
+
 #  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
+array = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+min = array[0]
+array.each do |number|
+  if number[:price] < min[:price]
+    min = number
+  end
+end
+
+p min
+
 
 #  7. Start with an array of numbers and compute product of all the numbers.
 #     For example, [5, 10, 8, 3] becomes 1200.
