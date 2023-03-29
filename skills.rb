@@ -77,7 +77,7 @@ array.each do |number|
   product *= number
 end
 
-p product
+# p product
 
 #  8. Start with an array of strings and combine them all into a single string, separated by dashes.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
@@ -87,13 +87,34 @@ single_string = "-"
 strings.each do |string|
   single_string += "#{string}-"
 end
-p single_string
+# p single_string
 
 #  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 
+array = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+
+shortest_length = array[0]
+array.each do |short|
+  if shortest_length[:name].length > short[:name].length
+    shortest_length = short
+  end
+end
+
+p shortest_length
+
 # 10. Start with an array of numbers and compute the maximum number.
 #     For example, [5, 10, 8, 3] becomes 10.
+
+numbers = [5, 10, 8, 3]
+max_number = 0
+numbers.each do |number|
+  if number > max_number
+    max_number = number
+  end
+end
+
+p max_number
 
 
 # SOLUTIONS (using while loop): https://gist.github.com/peterxjang/376c8931a48549889eb3c9bc091e9f43
