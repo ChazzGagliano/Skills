@@ -53,7 +53,7 @@ array.each do |number|
   sum += number.length
 end
 
-p sum
+# p sum
 
 #  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
@@ -65,14 +65,29 @@ array.each do |number|
   end
 end
 
-p min
+# p min
 
 
 #  7. Start with an array of numbers and compute product of all the numbers.
 #     For example, [5, 10, 8, 3] becomes 1200.
 
+array = [5, 10, 8, 3]
+product = 1 
+array.each do |number|
+  product *= number
+end
+
+p product
+
 #  8. Start with an array of strings and combine them all into a single string, separated by dashes.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
+
+strings = ["volleyball", "basketball", "badminton"]
+single_string = "-"
+strings.each do |string|
+  single_string += "#{string}-"
+end
+p single_string
 
 #  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
